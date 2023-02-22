@@ -3,6 +3,7 @@ $cor-secundaria: #111;
 $fonte: 'Open Sans', sans-serif;
 $tablet-width: 900px;
 $mobile-width: 750px;
+$mobile-width-2: 500px;
 
 @mixin tablet{
     @media(max-width: #{$tablet-width}){
@@ -12,6 +13,12 @@ $mobile-width: 750px;
 
 @mixin mobile{
     @media(max-width: #{$mobile-width}){
+        @content;
+    }
+}
+
+@mixin mobile-2{
+    @media(max-width: #{$mobile-width-2}){
         @content;
     }
 }

@@ -46,6 +46,11 @@
     font-size: 32px;
   }
 }
+@media (max-width: 500px) {
+  .titulo h2 {
+    font-size: 24px;
+  }
+}
 
 .header-menu {
   display: flex;
@@ -133,6 +138,11 @@
     background: none;
     cursor: pointer;
     gap: 0.5rem;
+  }
+}
+@media (max-width: 500px) {
+  #btn-mobile {
+    margin: 0 auto;
   }
 }
 
