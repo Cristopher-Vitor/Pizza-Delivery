@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Pizza Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header-bg">
@@ -14,14 +17,20 @@
                 <img class="logo" src="imagens/delivery.png" alt="logo do site">
                 <h2>Pizza Delivery</h2>
             </ul>
-                <nav>
-                    <ul class="header-menu">
-                        <li><a>Pizzas</a></li>
-                        <li><a>Bebidas</a></li>
-                        <li><a>Contato</a></li>
+                <nav id="nav">
+                    <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="'menu" aria-expanded="false">Menu
+                        <span id="hamburguer"></span>
+                    </button>
+                    <ul class="header-menu" role="menu">
+                        <li><a href="#cardapio">Cardápio</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li class="carrinho"><a href="#"><img src="imagens/carrinho.png"></a></li>
                     </ul>
                 </nav>
-            </div>
+        </div>  
     </header>
+<script src="js/script.js"></script>
 </body>
+
 </html>
