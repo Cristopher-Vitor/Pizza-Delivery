@@ -203,6 +203,16 @@
     height: 600px;
   }
 }
+@media (max-width: 750px) {
+  .banner-img {
+    height: 450px;
+  }
+}
+@media (max-width: 500px) {
+  .banner-img {
+    height: 350px;
+  }
+}
 
 .banner-titulo {
   margin: auto;

@@ -184,6 +184,12 @@
     @include tablet{
         height: 600px;
     }
+    @include mobile{
+        height: 450px;
+    }
+    @include mobile-2{
+        height: 350px;
+    }
 }
 
 .banner-titulo{
