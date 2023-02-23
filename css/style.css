@@ -180,4 +180,48 @@
     transform: rotate(-135deg);
     top: -7px;
   }
+}
+
+.banner-container {
+  max-width: 1920px;
+}
+
+.banner-img {
+  max-width: 100%;
+  background-image: url(../imagens/pizza-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+  display: flex;
+  opacity: 0.9;
+}
+@media (max-width: 900px) {
+  .banner-img {
+    height: 600px;
+  }
+}
+
+.banner-titulo {
+  margin: auto;
+  font-size: 72px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  background-color: #111;
+  padding: 8px;
+}
+@media (max-width: 900px) {
+  .banner-titulo {
+    font-size: 48px;
+  }
+}
+@media (max-width: 750px) {
+  .banner-titulo {
+    font-size: 32px;
+  }
+}
+@media (max-width: 500px) {
+  .banner-titulo {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */

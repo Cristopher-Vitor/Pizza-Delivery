@@ -167,4 +167,38 @@
     }
 }
 
+.banner-container{
+    max-width: 1920px;
+}
 
+.banner-img{
+    max-width: 100%;
+    background-image: url(../imagens/pizza-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+    display: flex;
+    opacity: 0.9;
+    @include tablet{
+        height: 600px;
+    }
+}
+
+.banner-titulo{
+    margin: auto;
+    font-size: 72px;
+    color: #fff;
+    font-family: $fonte-2;
+    background-color: #111;
+    padding: 8px;
+    @include tablet{
+        font-size: 48px;
+    }
+    @include mobile{
+        font-size: 32px;
+    }
+    @include mobile-2{
+        font-size: 24px;
+    }
+}
