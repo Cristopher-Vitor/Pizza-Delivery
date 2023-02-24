@@ -217,14 +217,12 @@
 
 .cardapio{
     background-color: $cor-primaria;
-}
-
-.cardapio h1{
-    text-align: center;
-    padding: 60px 0 80px 0;
-    font-family: $fonte-2;
-    font-size: 56px;
-    
+    & h1{
+        text-align: center;
+        padding: 60px 0 80px 0;
+        font-family: $fonte-2;
+        font-size: 56px;
+    }
 }
 
 .pizzas{
@@ -273,4 +271,58 @@
     width: 300px ;
     height: 300px;
     max-width: 100%;
+}
+
+.contato{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0 40px 0;
+    background-color: $cor-hover;
+}
+
+.contato-lista li{
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.contato-lista h3{
+    font-size: 32px;
+    font-family: $fonte;
+    margin-bottom: 10px;
+}
+
+.telefone{
+    display: flex;
+    align-items: center;
+    & p{
+        margin-left: 5px;
+    }
+}
+
+.instagram{
+    display: flex;
+    align-items: center;
+    & p{
+        margin-left: 5px;
+    }
+}
+
+.facebook{
+    display: flex;
+    align-items: center;
+    & p{
+        margin-left: 5px;
+    }
+}
+
+.endereço h3{
+    font-size: 32px;
+    font-family: $fonte;
+    margin-bottom: 10px;
+}
+
+.endereço p{
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-family: $fonte;
 }

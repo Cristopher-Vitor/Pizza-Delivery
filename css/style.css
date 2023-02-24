@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -245,7 +246,6 @@
 .cardapio {
   background-color: #e7e7e7;
 }
-
 .cardapio h1 {
   text-align: center;
   padding: 60px 0 80px 0;
@@ -301,4 +301,58 @@
   width: 300px;
   height: 300px;
   max-width: 100%;
+}
+
+.contato {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0 40px 0;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.contato-lista li {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.contato-lista h3 {
+  font-size: 32px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
+}
+
+.telefone {
+  display: flex;
+  align-items: center;
+}
+.telefone p {
+  margin-left: 5px;
+}
+
+.instagram {
+  display: flex;
+  align-items: center;
+}
+.instagram p {
+  margin-left: 5px;
+}
+
+.facebook {
+  display: flex;
+  align-items: center;
+}
+.facebook p {
+  margin-left: 5px;
+}
+
+.endereço h3 {
+  font-size: 32px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
+}
+
+.endereço p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
 }/*# sourceMappingURL=style.css.map */
