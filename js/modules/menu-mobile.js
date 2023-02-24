@@ -1,7 +1,7 @@
 export default function initMenuMobile(){
     
 const btnMobile = document.querySelector('#btn-mobile');
-const headerMenu = document.querySelector('.header-menu li');
+const headerMenu = document.querySelector('.header-menu');
 
 function toggleMenu(event){
     if(event.type === 'touchstart')  event.preventDefault();
