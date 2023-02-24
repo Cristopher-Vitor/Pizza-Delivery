@@ -278,6 +278,15 @@
     justify-content: space-around;
     padding: 30px 0 40px 0;
     background-color: $cor-hover;
+    @include mobile-2{
+        display: grid;
+    }
+}
+
+.contato-lista{
+    @include mobile-2{
+        margin-bottom: 30px;
+    }
 }
 
 .contato-lista li{
