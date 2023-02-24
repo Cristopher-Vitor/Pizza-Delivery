@@ -16,6 +16,9 @@ function toggleMenu(event){
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+headerMenu.addEventListener('click', toggleMenu);
+headerMenu.addEventListener('touchstart', toggleMenu);
+
 
 
 
