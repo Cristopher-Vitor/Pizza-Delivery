@@ -331,6 +331,7 @@
   font-family: "Open Sans", sans-serif;
   margin-bottom: 10px;
   text-align: start;
+  margin-left: -2px;
 }
 
 .telefone {
@@ -361,7 +362,7 @@
   font-size: 32px;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 10px;
-  text-align: start;
+  margin-left: -2px;
 }
 
 .endereço p {
