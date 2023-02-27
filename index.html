@@ -43,43 +43,42 @@
     <main class="cardapio" id="cardapio">
         <h1>Cardápio</h1>
         <ul class="pizzas">
-            <li>
+            <li id="pizza1">
                 <img src="imagens/pizza.png">
                 <h3>Calabresa</h3>
                 <span>R$ 48,00</span>
                 <a>Adicionar ao carrinho</a>
-                
             </li>
 
-            <li>
+            <li id="pizza2">
                 <img src="imagens/pizza2.png">
                 <h3>4 Queijos</h3>
                 <span>R$ 55,00</span>
                 <a>Adicionar ao carrinho</a>
             </li>
 
-            <li>
+            <li id="pizza3">
                 <img src="imagens/pizza3.png">
                 <h3>À Moda</h3>
                 <span>R$ 42,00</span>
                 <a>Adicionar ao carrinho</a>
             </li>
 
-            <li>
+            <li id="pizza4">
                 <img src="imagens/pizza4.png">
                 <h3>Marguerita</h3>
                 <span>R$ 38,00</span>
                 <a>Adicionar ao carrinho</a>
             </li>
 
-            <li>
+            <li id="pizza5">
                 <img src="imagens/pizza5.png">
                 <h3>Vegana</h3>
                 <span>R$ 40,00</span>
                 <a>Adicionar ao carrinho</a>
             </li>
 
-            <li>
+            <li id="pizza6">
                 <img src="imagens/pizza7.png">
                 <h3>Chocolate</h3>
                 <span>R$ 50,00</span>
@@ -125,6 +124,49 @@
                 <input type="password" for="senha" id="senha">
                 <button type="submit">Entrar</button>
             </form>
+        </div>
+    </section>
+
+    <section class="pizza-container">
+        <div class="modal-pizza">
+            <div class="imagem-modal">
+                <img src="imagens/pizza.png">
+            </div>
+            
+            <div class="pizza-info">
+                <h1 class="pizza-titulo" data-pizza="index"></h1>
+                <h3>Tamanho</h3>
+                <ul class="pizzaInfo-sizes">
+                    <li>Pequena
+                        <p>4 FATIAS</p>
+                    </li>
+                    <li>Média
+                        <p>6 FATIAS</p>
+                    </li>
+                    <li>Grande
+                        <p>8 FATIAS</p>
+                    </li>
+                </ul>
+                
+            <div class="price-area">
+                <div class="price">
+                    <h2>Preço</h2>
+                    <p>R$ </p>
+                </div>
+
+                <div class="pizza-qtArea">
+                    <button>-</button>
+                    <div class="pizza-qt">1</div>
+                    <button>+</button>
+                </div>
+        </div>
+
+        <ul class="add-area">
+            <li class="add">Adicionar ao carrinho</li>
+            <li class="remove">Cancelar</li>
+        </ul>
+        
+        </div>  
         </div>
     </section>
 

@@ -3,9 +3,16 @@ $cor-secundaria: #111;
 $cor-hover: rgba(0,0,0,.05);
 $fonte: 'Open Sans', sans-serif;
 $fonte-2: 'Poppins', sans-serif;
+$desktop2-width: 1400px;
 $tablet-width: 900px;
 $mobile-width: 750px;
 $mobile-width-2: 500px;
+
+@mixin desktop-2{
+    @media(max-width: #{$desktop2-width}){
+        @content;
+    }
+}
 
 @mixin tablet{
     @media(max-width: #{$tablet-width}){
