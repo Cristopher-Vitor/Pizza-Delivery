@@ -370,6 +370,9 @@
         min-width: 0;
         width: 350px;
     }
+    @include mobile-2{
+        width: 265px;
+    }
 }
 
 @keyframes modal{

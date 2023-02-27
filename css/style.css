@@ -407,6 +407,11 @@
     width: 350px;
   }
 }
+@media (max-width: 500px) {
+  .modal {
+    width: 265px;
+  }
+}
 
 @keyframes modal {
   from {
