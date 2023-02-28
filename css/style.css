@@ -774,6 +774,7 @@
 @media (max-width: 500px) {
   .add {
     font-size: 14px;
+    white-space: nowrap;
   }
 }
 
