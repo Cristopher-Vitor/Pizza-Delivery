@@ -564,9 +564,9 @@
 }
 @media (max-width: 500px) {
   .modal-pizza {
-    width: 400px;
-    border: 5px solid #111;
-    box-shadow: 0 0 0 5px white;
+    width: 350px;
+    border: 7px solid #111;
+    box-shadow: 0 0 0 7px white;
   }
 }
 
@@ -631,7 +631,6 @@
   background-color: #e7e7e7;
   border-radius: 10px;
   max-width: 360px;
-  cursor: pointer;
   color: #111;
   margin-bottom: 20px;
 }
@@ -647,8 +646,14 @@
     margin: 0 auto;
   }
 }
+@media (max-width: 500px) {
+  .pizzaInfo-sizes {
+    display: block;
+  }
+}
 
 .pizzaInfo-sizes li {
+  cursor: pointer;
   padding-left: 20px;
   min-width: 100px;
   padding: 5px 15px;
@@ -662,6 +667,16 @@
   text-align: start;
   color: #000;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .pizzaInfo-sizes li p {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .pizzaInfo-sizes li {
+    text-align: center;
+  }
 }
 
 .price-area {
@@ -733,7 +748,6 @@
   gap: 30px;
   display: flex;
   margin-top: 20px;
-  cursor: pointer;
 }
 @media (max-width: 750px) {
   .add-area {
@@ -742,6 +756,7 @@
 }
 
 .add {
+  cursor: pointer;
   background-color: rgba(0, 0, 0, 0.05);
   padding: 10px 15px;
   border-radius: 10px;
@@ -756,8 +771,20 @@
     font-size: 16px;
   }
 }
+@media (max-width: 500px) {
+  .add {
+    font-size: 14px;
+  }
+}
 
 .remove {
+  cursor: pointer;
   padding: 10px 15px;
   font-size: 14px;
+  color: #E54;
+}
+@media (max-width: 500px) {
+  .remove {
+    text-align: end;
+  }
 }/*# sourceMappingURL=style.css.map */

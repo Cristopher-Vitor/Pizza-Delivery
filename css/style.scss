@@ -506,9 +506,9 @@
     display: block;
    }
    @include mobile-2{
-    width: 400px;
-    border: 5px solid $cor-secundaria;
-    box-shadow: 0 0 0 5px white;;
+    width: 350px;
+    border: 7px solid $cor-secundaria;
+    box-shadow: 0 0 0 7px white;
    }
 }
 
@@ -568,7 +568,6 @@
     background-color: $cor-primaria;
     border-radius: 10px;
     max-width: 360px;
-    cursor: pointer;
     color: $cor-secundaria;
     margin-bottom: 20px;
     @include tablet{
@@ -579,9 +578,13 @@
         font-size: 14px;
         margin: 0 auto;
     }
+    @include mobile-2{
+        display: block;
+    }
 }
 
 .pizzaInfo-sizes li{
+    cursor: pointer;
     padding-left: 20px;
     min-width: 100px;
     padding: 5px 15px;
@@ -593,6 +596,12 @@
         text-align: start;
         color: #000;
         font-weight: bold;
+        @include mobile-2{
+            text-align: center;
+        }
+    }
+    @include mobile-2{
+        text-align: center;
     }
 }
 
@@ -660,13 +669,13 @@
     gap: 30px;
     display: flex;
     margin-top: 20px;
-    cursor: pointer;
     @include mobile{
         justify-content: center;
     }
 }
 
 .add{
+    cursor: pointer;
     background-color: $cor-hover; 
     padding: 10px 15px;
     border-radius: 10px;
@@ -677,11 +686,18 @@
     @include mobile{
        padding: 10px 8px;
        font-size: 16px;
-      
+    }
+    @include mobile-2{
+        font-size: 14px;
     }
 }
 
 .remove{
+    cursor: pointer;
     padding: 10px 15px;
     font-size: 14px;
+    color: #E54;
+    @include mobile-2{
+        text-align: end;
+    }
 }
