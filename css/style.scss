@@ -231,7 +231,7 @@
     gap: 50px;
     padding-bottom: 50px;
     @include desktop-2{
-       grid-template-columns: 10px 1fr 1fr 1fr;
+       grid-template-columns: 10px 1fr 1fr;
     }
     @include tablet{
         grid-template-columns:  1fr 1fr;
@@ -482,6 +482,9 @@
     display: none;
     justify-content: center;
     align-items: center;
+    &.ativo{
+        display: flex;
+    }
 }
 
 .modal-pizza{
@@ -492,6 +495,36 @@
    padding: 40px;
    gap: 80px;
    border-radius: 10px;
+   border: 10px solid $cor-secundaria;
+   box-shadow: 0 0 0 10px white;
+   @include tablet{
+    gap: 50px;
+    width: 700px;
+   }
+   @include mobile{
+    width: 500px;
+    display: block;
+   }
+   @include mobile-2{
+    width: 400px;
+    border: 5px solid $cor-secundaria;
+    box-shadow: 0 0 0 5px white;;
+   }
+}
+
+@keyframes pizzaModal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.ativo .modal-pizza{
+    animation: pizzaModal .3s forwards;
 }
 
 .imagem-modal{
@@ -503,6 +536,13 @@
 .imagem-modal img{
     height:300px;
     width:auto;
+    @include tablet{
+        height: 250px;
+    }
+    @include mobile{
+        height: 100px;
+        margin: 0 auto;
+    }
 }
 
 .pizza-titulo{
@@ -515,6 +555,10 @@
     margin-bottom: 5px;
     font-size: 32px;
     font-family: $fonte;
+    @include mobile{
+        font-size: 24px;
+        text-align: center;
+    }
 }
 
 .pizzaInfo-sizes{
@@ -527,6 +571,14 @@
     cursor: pointer;
     color: $cor-secundaria;
     margin-bottom: 20px;
+    @include tablet{
+        gap: 10px;
+    }
+    @include mobile{
+        max-width: 300px;
+        font-size: 14px;
+        margin: 0 auto;
+    }
 }
 
 .pizzaInfo-sizes li{
@@ -536,16 +588,23 @@
     &:hover{
         background-color: $cor-hover;
     }& p{
-        font-size: 12px;
+        font-size: 10px;
         font-family: $fonte-2;
         text-align: start;
-        color: $cor-secundaria;
+        color: #000;
+        font-weight: bold;
     }
 }
 
 .price-area{
     display: flex;
     align-items: center;
+    @include mobile{
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+   
 }
 
 .price{
@@ -559,6 +618,9 @@
         font-family: $fonte-2;
         align-self: self-end;
     }
+    @include mobile{
+        margin: 0 auto;
+    }
 }
 
 .pizza-qtArea{
@@ -569,6 +631,9 @@
     border-radius:10px;
     height:30px;
     margin-bottom: 10px;
+    @include mobile{
+        margin-right: 5px;
+    }
 }
 
 .pizza-qtArea button{
@@ -596,6 +661,9 @@
     display: flex;
     margin-top: 20px;
     cursor: pointer;
+    @include mobile{
+        justify-content: center;
+    }
 }
 
 .add{
@@ -605,6 +673,11 @@
     font-size: 20px;
     &:hover{
         background-color: $cor-primaria;
+    }
+    @include mobile{
+       padding: 10px 8px;
+       font-size: 16px;
+      
     }
 }
 
